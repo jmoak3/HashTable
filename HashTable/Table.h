@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include <memory>
+#include <vector>
 
 class Table
 {
@@ -16,5 +16,6 @@ private:
 	bool resizeBuckets();
 	float calculateLoadFactor();
 	float loadFactor;
-	std::shared_ptr<int> buckets;
+	int size;
+	std::vector<int> buckets;
 };
